@@ -1,10 +1,17 @@
 import java.util.Scanner;
 
 public class MetersToFeet {
-   
-   /* Define your method here */ 
-   
+
+   public static double convert(double meters) {
+      return meters * 3.28;
+   }
+
    public static void main(String[] args) {
-      /* Type your code here. Your code must call the method.  */
+      Scanner scnr = new Scanner(System.in);
+
+      double meters = scnr.nextDouble();
+      double feet = convert(meters);
+
+      System.out.printf("%.2f", feet);
    }
 }
